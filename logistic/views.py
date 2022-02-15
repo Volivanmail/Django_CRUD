@@ -19,4 +19,4 @@ class StockViewSet(ModelViewSet):
     serializer_class = StockSerializer
     filter_backends = [DjangoFilterBackend]
     filterset_fields = ['products']
-
+    pagination_class = LimitOffsetPagination
